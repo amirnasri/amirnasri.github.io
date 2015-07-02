@@ -1,3 +1,9 @@
+<html>
+<head>  
+
+</head>  
+<body>  
+
 it works!
 
 <a href="JNLPExample.jnlp"> example web start</a>
@@ -7,3 +13,16 @@ it works!
 <applet code="HelloWorld.class" archive="HelloWorld.jar" codebase="https://amirnasri.github.io"> play applet </applet>
 <br>
 <applet code="Game_manager.class" archive="java_game2.jar"> play applet </applet>
+
+<script src="http://www.java.com/js/deployJava.js"></script>
+<script>
+    var attributes = {
+        code:'JNLPExample.class',
+    width:700, height:500} ;
+    var parameters = {}; // does the Applet take parameters?
+    var version = '1.6' ; // does the Applet require a minimum version of Java
+    deployJava.runApplet(attributes, parameters, version);
+</script>
+
+</body>  
+</html>
