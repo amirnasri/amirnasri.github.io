@@ -13,7 +13,7 @@
      </security>
 
      <resources>
-          <j2se version="1.7+" />
+          <j2se version="1.7" />
           <jar href="java_game.jar" />
      </resources>
 
