@@ -9,7 +9,7 @@
      </information>
 
      <security>
-          <all-permissions/>
+          <sandbox/>
      </security>
 
      <resources>
