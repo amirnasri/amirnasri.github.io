@@ -4,7 +4,7 @@
 * [Restricted Boltzmann Machine](https://github.com/amirnasri/Restricted_Boltzmann_Machine)
   * An implementation of the Bernoulli Restricted Boltzmann Machine in python.
 * [DNS resolver](https://github.com/amirnasri/HBase_DNS_resolver)
-  * A DNS resolver using HBase, Hadoop, and Hive.
+  * A DNS resolver using Hadoop, HBase, and Hive.
 * [Mario Java game](https://github.com/amirnasri/Java_game)
   * A Mario game in Java.
   
