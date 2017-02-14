@@ -3,7 +3,9 @@
   * An ftp client in python with look and feel of the bash shell.
 * [Restricted Boltzmann Machine](https://github.com/amirnasri/Restricted_Boltzmann_Machine)
   * An implementation of the Bernoulli Restricted Boltzmann Machine in python.
-* [Mario Java game](https://github.com/amirnasri/Restricted_Boltzmann_Machine)
+* [DNS resolver](https://github.com/amirnasri/HBase_DNS_resolver)
+  * A DNS resolver using HBase, Hadoop, and Hive.
+* [Mario Java game](https://github.com/amirnasri/Java_game)
   * A Mario game in Java.
   
   
