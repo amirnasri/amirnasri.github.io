@@ -1,4 +1,4 @@
 # Projects:
 * ftpshell
 
-** An ftp client in python
+  *An ftp client in python
