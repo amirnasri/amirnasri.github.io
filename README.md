@@ -9,3 +9,24 @@
   * A simple HTTP server in Java.
 * [Mario Java game](https://github.com/amirnasri/Java_game)
   * A Mario game in Java.
+
+<html>
+<body>
+
+<h2>A Nested List</h2>
+
+<ul>
+  <li>Coffee</li>
+  <li>Tea
+    <ul>
+    <li>Black tea</li>
+    <li>Green tea</li>
+    </ul>
+  </li>
+  <li>Milk</li>
+</ul>
+
+</body>
+</html>
+
+
