@@ -16,7 +16,7 @@
 <h2>A Nested List</h2>
 
 <ul>
-  <li>[ftpshell](https://github.com/amirnasri/ftpshell)</li>
+<li> <a href="https://github.com/amirnasri/ftpshell"> ftpshell </a> </li>
     <ul>
     <li> An ftp client in python with look and feel of the bash shell.</li>
     </ul>
