@@ -16,6 +16,10 @@
 <h2>A Nested List</h2>
 
 <ul>
+li{
+    margin-top: 10px;
+    border:1px solid grey;
+}
 <li> <a href="https://github.com/amirnasri/ftpshell"> ftpshell </a> </li>
     <ul>
     <li> An ftp client in python with look and feel of the bash shell.</li>
