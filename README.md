@@ -1,4 +1,4 @@
-# Projects:
+# Repositories:
 * [ftpshell](https://github.com/amirnasri/ftpshell)
   * An ftp client in python with look and feel of the bash shell.
 * [Restricted Boltzmann Machine](https://github.com/amirnasri/Restricted_Boltzmann_Machine)
