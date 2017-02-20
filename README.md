@@ -9,34 +9,20 @@
   * A simple HTTP server in Java.
 * [Mario Java game](https://github.com/amirnasri/Java_game)
   * A Mario game in Java.
-
-<!DOCTYPE html>
+  
+  
 <html>
 <head>
 <style>
-li{
-    margin-top: 10px;
-    border:1px solid grey;
-}
+body {background-color: powderblue;}
+h1   {color: blue;}
+p    {color: red;}
 </style>
 </head>
 <body>
 
-
-<h2>A Nested List</h2>
-
-<ul>
-<li> <a href="https://github.com/amirnasri/ftpshell"> ftpshell </a> </li>
-    <ul>
-    <li> An ftp client in python with look and feel of the bash shell.</li>
-    </ul>
-  <li>[ftpshell](https://github.com/amirnasri/ftpshell)</li>
-    <ul>
-    <li> An ftp client in python with look and feel of the bash shell.</li>
-    </ul>
-</ul>
+<h1>This is a heading</h1>
+<p>This is a paragraph.</p>
 
 </body>
 </html>
-
-
