@@ -11,13 +11,16 @@
   * A Mario game in Java.
 
 <html>
-<body>
+<head>
 <style>
 li{
     margin-top: 10px;
     border:1px solid grey;
 }
 </style>
+</head>
+<body>
+
 
 <h2>A Nested List</h2>
 
