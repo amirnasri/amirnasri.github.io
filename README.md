@@ -10,6 +10,7 @@
 * [Mario Java game](https://github.com/amirnasri/Java_game)
   * A Mario game in Java.
 
+<!DOCTYPE html>
 <html>
 <head>
 <style>
