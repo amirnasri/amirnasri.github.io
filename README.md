@@ -9,20 +9,3 @@
   * A simple HTTP server in Java.
 * [Mario Java game](https://github.com/amirnasri/Java_game)
   * A Mario game in Java.
-  
-  
-<html>
-<head>
-<style>
-body {background-color: powderblue;}
-h1   {color: blue;}
-p    {color: red;}
-</style>
-</head>
-<body>
-
-<h1>This is a heading</h1>
-<p>This is a paragraph.</p>
-
-</body>
-</html>
