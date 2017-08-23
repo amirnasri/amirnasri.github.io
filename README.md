@@ -1,4 +1,6 @@
 # Repositories:
+* [Spark movie recommender](https://github.com/amirnasri/Spark_movie_recommender)
+  * A movie recommendation system using Apache Spark.
 * [ftpshell](https://github.com/amirnasri/ftpshell)
   * An ftp client in python with an interface similar to the bash shell.
 * [Restricted Boltzmann Machine](https://github.com/amirnasri/Restricted_Boltzmann_Machine)
