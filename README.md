@@ -1,6 +1,6 @@
-* [Predicting resource access permissions for Amazon employees](/blog/amazon-kaggle.html)
+* [Predicting resource access permissions for Amazon employees](/amazon-kaggle.html)
   * In this post, we consider the Amazon Employee Access Chalenge hosted by Kaggle.
-* [Detecting insults in social media](/blog/insults-kaggle.html)
+* [Detecting insults in social media](/insults-kaggle.html)
   * In this post, we tackle the problem of detecting insults in comments posted on social media.
 * [Spark movie recommender](https://github.com/amirnasri/Spark_movie_recommender)
   * A movie recommendation system using Apache Spark.
