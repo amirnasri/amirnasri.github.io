@@ -1,5 +1,5 @@
 # Repositories:
-* [Amazon-kaggle](https://github.com/amirnasri/amazon-kaggle.html)
+* [Amazon-kaggle](https://github.com/amirnasri/amirnasri.github.io/amazon-kaggle.html)
   * A movie recommendation system using Apache Spark.
 * [Spark movie recommender](https://github.com/amirnasri/Spark_movie_recommender)
   * A movie recommendation system using Apache Spark.
