@@ -1,6 +1,6 @@
 # Repositories:
-* [Amazon-kaggle](/amazon-kaggle.html)
-  * A movie recommendation system using Apache Spark.
+* [Predicting resource access permissions for Amazon employees](/blog/amazon-kaggle.html)
+  * In this post, we consider the Amazon Employee Access Chalenge hosted by Kaggle.
 * [Spark movie recommender](https://github.com/amirnasri/Spark_movie_recommender)
   * A movie recommendation system using Apache Spark.
 * [ftpshell](https://github.com/amirnasri/ftpshell)
