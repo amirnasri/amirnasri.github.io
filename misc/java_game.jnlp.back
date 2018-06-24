@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0+" codebase="https://amirnasri.github.io/" href="java_game.jnlp">
+
+     <information>
+          <title>Java game</title>
+          <vendor>amir</vendor>
+          <homepage href="https://amirnasri.github.io/" />
+          <description>JNLP Testing</description>
+     </information>
+
+     <security>
+          <all-permissions/>
+     </security>
+
+     <resources>
+          <j2se version="1.7+" />
+          <jar href="java_game.jar" />
+     </resources>
+
+     <application-desc main-class="Game_manager" />
+</jnlp>
