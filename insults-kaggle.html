@@ -1039,7 +1039,7 @@ h6:hover .anchor-link {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>In this article, we consider the problem of detecting insults in social media comments. This is an important problem from a practical point of views since there are many social media sites such as youtube, yelp, etc, that are interested in detecting and filtering out comments that involve insults especially to other users. We use the data provided in <a href="https://www.kaggle.com/c/detecting-insults-in-social-commentary">this</a> competition hosted by Kaggle. We follow the same setup and use the same performance criterion as in the competition to be able to compare our results to the winners of the competition.</p>
+<p>In this article, we consider the problem of detecting insults in social media comments. This is an important problem from a practical point of views since there are many social media sites such as YouTube, Yelp, etc, that are interested in detecting and filtering out comments that involve insults especially to other users. We use the data provided in <a href="https://www.kaggle.com/c/detecting-insults-in-social-commentary">this</a> competition hosted by Kaggle. We follow the same setup and use the same performance criterion as in the competition to be able to compare our results to the winners of the competition.</p>
 </div>
 </div>
 </div>
@@ -1346,12 +1346,9 @@ h6:hover .anchor-link {
             <span class="n">c</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="sa">r</span><span class="s1">'[-"]'</span><span class="p">,</span> <span class="s1">''</span><span class="p">,</span> <span class="n">c</span><span class="p">)</span>
             <span class="n">c</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="sa">r</span><span class="s1">'[:*#%&amp;,.?!</span><span class="se">\'</span><span class="s1">]'</span><span class="p">,</span> <span class="s1">' '</span><span class="p">,</span> <span class="n">c</span><span class="p">)</span>
             <span class="n">c</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="sa">r</span><span class="s2">"(.)\1{2,}"</span><span class="p">,</span> <span class="s1">'\g&lt;1&gt;'</span><span class="p">,</span> <span class="n">c</span><span class="p">)</span>
-            <span class="c1">#c = re.sub(r'@[^ ]*', ' ', c)</span>
-            <span class="c1">#c = re.sub(r'[0-9]+', ' ', c)</span>
             <span class="n">c</span> <span class="o">=</span> <span class="s2">" "</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="n">wordnet_lemmatizer</span><span class="o">.</span><span class="n">lemmatize</span><span class="p">(</span><span class="n">wordnet_lemmatizer</span><span class="o">.</span><span class="n">lemmatize</span><span class="p">(</span><span class="n">w</span><span class="p">,</span> <span class="n">pos</span><span class="o">=</span><span class="s1">'v'</span><span class="p">))</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> 
                           <span class="k">for</span> <span class="n">w</span> <span class="ow">in</span> <span class="n">c</span><span class="o">.</span><span class="n">split</span><span class="p">()])</span>
 
-            <span class="c1">#c = " ".join([w.lower() for w in c.split()])# if 3&lt;=len(w)&lt;=40])</span>
             <span class="n">comments_clean</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">c</span><span class="p">)</span>
         <span class="k">return</span> <span class="n">comments_clean</span>
     
