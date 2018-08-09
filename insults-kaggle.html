@@ -1039,7 +1039,7 @@ h6:hover .anchor-link {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>In this article, we consider the problem of detecting insults in social media comments. This is an important problem from a practical point of views since there are many social media sites such as YouTube, Yelp, etc, that are interested in detecting and filtering out comments that involve insults especially to other users. We use the data provided in <a href="https://www.kaggle.com/c/detecting-insults-in-social-commentary">this</a> competition hosted by Kaggle. We follow the same setup and use the same performance criterion as in the competition to be able to compare our results to the winners of the competition.</p>
+<p>In this article, we consider the problem of detecting insults in social media comments. This is an important problem from a practical point of views, since there are many social media sites such as YouTube, Yelp, etc, that are interested in detecting and filtering out comments that involve insults especially to other users. We use the data provided in <a href="https://www.kaggle.com/c/detecting-insults-in-social-commentary">this</a> competition hosted by Kaggle. We follow the same setup and use the same performance criterion as in the competition to be able to compare our results to the winners of the competition.</p>
 </div>
 </div>
 </div>
@@ -1055,7 +1055,7 @@ h6:hover .anchor-link {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>At this competition, first "train.csv" was made available and contestants were ask to submit their preliminary models. Here is a random sample of the train data:</p>
+<p>At this competition, first "train.csv" was made available and contestants were ask to submit their preliminary models. Here are five rows sampled randomly from the train data:</p>
 </div>
 </div>
 </div>
@@ -1130,7 +1130,7 @@ h6:hover .anchor-link {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>The public and private leaderboad evaluation at this first stage was done on a test data set that later was made available as "test_with_solutions.csv". The contestants then submitted their final models which were evaluated on a verification set. This set was provided after the competition was disclosed as "impermium_verification_labels.csv".</p>
+<p>The public and private leaderboad evaluation at this first stage was done on a test dataset that later was made available as "test_with_solutions.csv". The contestants then submitted their final models which were evaluated on a verification set. This set was provided after the competition was ended and was disclosed as "impermium_verification_labels.csv".</p>
 </div>
 </div>
 </div>
@@ -1150,7 +1150,7 @@ h6:hover .anchor-link {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Since we are interested in building the final model, we need to combine the "train" and "test_with_solutions" data sets and use that as training data:</p>
+<p>Since we are interested in building the final model, we need to combine the "train" and "test_with_solutions" datasets and use the resulting dataset as training data:</p>
 </div>
 </div>
 </div>
@@ -1169,7 +1169,7 @@ h6:hover .anchor-link {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>After building our model we will evaluate the model performance on the "verification" data set above which serves as test data. Here is a glimpse of our training data:</p>
+<p>After building our model, we will evaluate the model performance on the "verification" dataset above which serves as test data. Here is a glimpse of our training data:</p>
 </div>
 </div>
 </div>
@@ -1295,8 +1295,8 @@ h6:hover .anchor-link {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>As we can see, we are provided with the text of the comments as well the date the comments were posted. Also the Insult column shows whether the comments is an insult. This is what we are required to predict for the test data.</p>
-<p>We also see that the comments are not cleaned. For example the non-breaking spaces appear as "\xa0" and should be removed. Also there characters like "\n" and "\n" which should be replaced by a white space.</p>
+<p>As we can see, we are provided with the text of the comments as well as the date the comments were posted. Also the Insult column shows whether the comments is an insult. This is what we are required to predict for the test data.</p>
+<p>We also see that the comments are not cleaned. For example the non-breaking spaces appear as "\xa0" and should be removed. Also there are characters like "\n" and "\n" which should be replaced by a white space.</p>
 </div>
 </div>
 </div>
@@ -1371,7 +1371,7 @@ h6:hover .anchor-link {
 <li>replace repeated characters with a single character so that e.g. word "heeelllll" will be converted to "hell"</li>
 <li>replace each word with its lemmatized version and convert all words to lower case</li>
 </ul>
-<p>Here we can see the original and cleaned comments side-by-side.</p>
+<p>Here we see the original and cleaned comments side-by-side:</p>
 </div>
 </div>
 </div>
@@ -1472,7 +1472,7 @@ h6:hover .anchor-link {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>The most common way to extract feature from text is text vectorization. In this approach, first a bag-of-word representation of the documents is build which contains all the words that appear in any of the documents. Then the number of times each word appears in a document is calculated and is used as a feature vector to represent the document. Optionally, we can divide the word counts by the frequency of each word appearing in all the documents combine. This allows us to reduce the effect of very common words which do not convey much information. A detailed explanation of text vectorization techniques can be found <a href="http://scikit-learn.org/stable/modules/feature_extraction.html">here</a>.</p>
+<p>The most common way to extract feature from text is text vectorization. In this approach, first a bag-of-word representation of the documents is build which contains all the words that appear in any of the documents. Then the number of times each word appears in a document is calculated and is used as a feature vector to represent the document. Optionally, we can divide these word counts by the frequency of each word appearing in all the documents combined. This allows us to reduce the effect of very common words which do not convey much information. A detailed explanation of text vectorization techniques can be found <a href="http://scikit-learn.org/stable/modules/feature_extraction.html">here</a>.</p>
 </div>
 </div>
 </div>
@@ -1497,8 +1497,8 @@ h6:hover .anchor-link {
 <p>In addition to standard features, we develop the following feature extractor transformer which extract features that are directly related to the problem of insult detection. This transformer extracts the following features:</p>
 <ul>
 <li>The count of bad words used the in comment.</li>
-<li>The number of positional tags such as verb, noun, adjective, etc, obtained using ntlk.</li>
-<li>The number of at mentions in the comment since we are asked to detect insults directed to other members as apposed to public figures like politicians or celebrities.</li>
+<li>The number of positional tags such as verb, noun, adjective, etc, obtained using ntlk library.</li>
+<li>The number of @ mentions in the comment since we are asked to detect insults directed to other members as apposed to public figures like politicians or celebrities.</li>
 </ul>
 </div>
 </div>
@@ -1600,7 +1600,7 @@ h6:hover .anchor-link {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>The metric used for the competition is ROC AUC score which can be calculated as follows.</p>
+<p>The metric used for the competition is ROC AUC score which can be calculated as follows:</p>
 </div>
 </div>
 </div>
@@ -1623,7 +1623,7 @@ h6:hover .anchor-link {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Using the scoring metric we can calculated the performance our pipeline using cross-validation:</p>
+<p>Using this scoring metric we can calculate the performance of our pipeline using cross-validation:</p>
 </div>
 </div>
 </div>
@@ -1654,8 +1654,8 @@ h6:hover .anchor-link {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>The validation score looks great and have small variations across the cross-validation folds. But we should keep in mind that this is out local validation score and does not necessarily translate directly to leader-board score. Nevertheless, we can use the local score as a proxy for the leader board score and employ it to improve the classification performance.</p>
-<p>In the following we use grid-search to perform an exhaustive search over a range of parameters for feature extraction and classification steps in out data pipeline.</p>
+<p>The validation score looks great and has small variations across the cross-validation folds. But we should keep in mind that this is our local validation score and does not necessarily translate directly to the leaderboard score. Nevertheless, we can use this local score as a proxy for the leaderboard score and employ it to improve the classification performance.</p>
+<p>In the following we use a grid-search to perform an exhaustive search over a range of parameters for feature extraction and classification steps in our data pipeline.</p>
 </div>
 </div>
 </div>
@@ -1721,7 +1721,7 @@ h6:hover .anchor-link {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>The fact that we obtain the highest score for the largest values of n_gram parameters suggests that we may be able to gain by increasing this parameter. To explore this we perform the following optimization:</p>
+<p>The fact that we obtain the highest score for the largest values of n_gram parameters suggests that we may be able to improve the pipeline performance by increasing this parameter. To explore this, we perform the following optimization:</p>
 </div>
 </div>
 </div>
@@ -2063,7 +2063,7 @@ pMOBpxsqN7POhOnYk4C9Cc+KXga+aWa1Dd3nXKnwYTrn8kDSTkCvhsqjGXDOtVqejJxzzsXOZ9M5
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Out final score is considerably lower than the local validation score of 0.9081. But if we turn to the private leaderboard of the competition, we find that the best score was <a href="https://www.kaggle.com/c/detecting-insults-in-social-commentary/leaderboard">0.84248</a>. This means that we have a achieved a score around 97% of the winning solution score which is great specially considering that we used logistic regression which is not considered a complex classifier. On the plus side however, logistic regression is very fast and efficient which is advantageous when using the model on real world data to classify comments as they are received.</p>
+<p>Our final score is considerably lower than the local validation score of 0.9081. However, if we turn to the private leaderboard of the competition, we find that the best score was <a href="https://www.kaggle.com/c/detecting-insults-in-social-commentary/leaderboard">0.84248</a>. This means that we have a achieved a score around 97% of the winning solution score which is great specially considering that we used logistic regression which is not considered a complex classifier. On the plus side however, logistic regression is very fast and efficient which is advantageous when using the model on real world data to classify comments as they are received.</p>
 </div>
 </div>
 </div>
