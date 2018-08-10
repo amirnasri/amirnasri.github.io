@@ -187,7 +187,7 @@ div.cell.selected.jupyter-soft-selected {
   }
 }
 .prompt {
-  /* This needs to be wide enough for 3 digit prompt numbers: In[100]: */
+  /* This needs to be wide enough for 3 digit prompt numbers:  */
   min-width: 14ex;
   /* This padding is tuned to match the padding on the CodeMirror editor. */
   padding: 0.4em;
@@ -1041,8 +1041,8 @@ h6:hover .anchor-link {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>In this article, we consider the <a href="https://www.kaggle.com/c/amazon-employee-access-challenge">Amazon Employee Access Challenge</a> hosted by Kaggle. In this challenge, we are asked to predict the resource access permissions required for a new employee given historical employee access data. This problem is motivated by the difficulties faced by new employees as they enter the company. In particular, new employees require access to resources such as web portals, printers, etc, and traditionally these access permissions are granted manually by the employee's manager, as they encounter road blocks. This process wastes a considerable amount of time for both the new employees and their manager.</p>
-<p>The task here is to automate this process, by building models based on previously available employee access data. The models learn common access patterns required by employees based on employee attributes such as employee's role, employee's manager role, etc, and predict resources accesses required by a new employee given their attributes.</p>
+<p>In this article, we consider the <a href="https://www.kaggle.com/c/amazon-employee-access-challenge">Amazon Employee Access Challenge</a> hosted by Kaggle. In this challenge, we are asked to predict the resource access permissions required for a new employee given historical employee access data. This problem is motivated by the difficulties faced by new employees as they enter the company. In particular, new employees require access to resources such as web portals, printers, etc, and traditionally these access permissions are granted manually by the employee's manager as they encounter road blocks. This process wastes a considerable amount of time for both the new employees and their managers.</p>
+<p>Our goal here is to automate this process, by building a model based on previously available employee access data. We aim to build a model that learns common access patterns required by employees based on employee attributes such as employee's role, employee's manager role, etc. Such a model then can be used to predict the resource accesses required by a new employee given their attributes.</p>
 </div>
 </div>
 </div>
@@ -1066,7 +1066,7 @@ h6:hover .anchor-link {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In [13]:</div>
+<div class="prompt input_prompt"></div>
 <div class="inner_cell">
 <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="kn">as</span> <span class="nn">pd</span>
@@ -1088,7 +1088,7 @@ h6:hover .anchor-link {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In [4]:</div>
+<div class="prompt input_prompt"></div>
 <div class="inner_cell">
 <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">train</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
@@ -1098,7 +1098,7 @@ h6:hover .anchor-link {
 </div>
 <div class="output_wrapper">
 <div class="output">
-<div class="output_area"><div class="prompt output_prompt">Out[4]:</div>
+<div class="output_area"><div class="prompt output_prompt"></div>
 <div class="output_html rendered_html output_subarea output_execute_result">
 <div>
 <style>
@@ -1281,7 +1281,7 @@ h6:hover .anchor-link {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In [34]:</div>
+<div class="prompt input_prompt"></div>
 <div class="inner_cell">
 <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">test</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
@@ -1291,7 +1291,7 @@ h6:hover .anchor-link {
 </div>
 <div class="output_wrapper">
 <div class="output">
-<div class="output_area"><div class="prompt output_prompt">Out[34]:</div>
+<div class="output_area"><div class="prompt output_prompt"></div>
 <div class="output_html rendered_html output_subarea output_execute_result">
 <div>
 <style>
@@ -1408,7 +1408,7 @@ h6:hover .anchor-link {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In [37]:</div>
+<div class="prompt input_prompt"></div>
 <div class="inner_cell">
 <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">train</span><span class="o">.</span><span class="n">isnull</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
@@ -1418,7 +1418,7 @@ h6:hover .anchor-link {
 </div>
 <div class="output_wrapper">
 <div class="output">
-<div class="output_area"><div class="prompt output_prompt">Out[37]:</div>
+<div class="output_area"><div class="prompt output_prompt"></div>
 <div class="output_text output_subarea output_execute_result">
 <pre>ACTION              0
 RESOURCE            0
@@ -1438,7 +1438,7 @@ dtype: int64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In [38]:</div>
+<div class="prompt input_prompt"></div>
 <div class="inner_cell">
 <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">test</span><span class="o">.</span><span class="n">isnull</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
@@ -1448,7 +1448,7 @@ dtype: int64</pre>
 </div>
 <div class="output_wrapper">
 <div class="output">
-<div class="output_area"><div class="prompt output_prompt">Out[38]:</div>
+<div class="output_area"><div class="prompt output_prompt"></div>
 <div class="output_text output_subarea output_execute_result">
 <pre>id                  0
 RESOURCE            0
@@ -1478,7 +1478,7 @@ dtype: int64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In [39]:</div>
+<div class="prompt input_prompt"></div>
 <div class="inner_cell">
 <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">train</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>
@@ -1488,7 +1488,7 @@ dtype: int64</pre>
 </div>
 <div class="output_wrapper">
 <div class="output">
-<div class="output_area"><div class="prompt output_prompt">Out[39]:</div>
+<div class="output_area"><div class="prompt output_prompt"></div>
 <div class="output_html rendered_html output_subarea output_execute_result">
 <div>
 <style>
@@ -1644,7 +1644,7 @@ dtype: int64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In [42]:</div>
+<div class="prompt input_prompt"></div>
 <div class="inner_cell">
 <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">train</span><span class="o">.</span><span class="n">RESOURCE</span><span class="o">.</span><span class="n">sample</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
@@ -1654,7 +1654,7 @@ dtype: int64</pre>
 </div>
 <div class="output_wrapper">
 <div class="output">
-<div class="output_area"><div class="prompt output_prompt">Out[42]:</div>
+<div class="output_area"><div class="prompt output_prompt"></div>
 <div class="output_text output_subarea output_execute_result">
 <pre>8450     75047
 25700    35376
@@ -1677,13 +1677,13 @@ Name: RESOURCE, dtype: int64</pre>
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>It seem that this field consists of categorical values which are anonymized using a label encoding. Actually the same seems to be true about all other fields. To confirm this suspicion, let find out the number of unique values for each field.</p>
+<p>It seems that this field consists of categorical values which are anonymized using a label encoding. Actually the same seems to be true about all other fields. To confirm this suspicion, let's find out the number of unique values for each field.</p>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In [50]:</div>
+<div class="prompt input_prompt"></div>
 <div class="inner_cell">
 <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
@@ -1699,7 +1699,7 @@ Name: RESOURCE, dtype: int64</pre>
 </div>
 <div class="output_wrapper">
 <div class="output">
-<div class="output_area"><div class="prompt output_prompt">Out[50]:</div>
+<div class="output_area"><div class="prompt output_prompt"></div>
 <div class="output_html rendered_html output_subarea output_execute_result">
 <div>
 <style>
@@ -1784,13 +1784,13 @@ Name: RESOURCE, dtype: int64</pre>
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>The features are anonymized, but we still can figure out their relative importance. This help us with getting better intuition about the data. To do this we first train a Random-Forest classifier on the train data.</p>
+<p>The features are anonymized, but we still can figure out their relative importance. This help us with getting a better intuition about the data. To do this we first train a Random-Forest classifier on the train data.</p>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In [14]:</div>
+<div class="prompt input_prompt"></div>
 <div class="inner_cell">
 <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.ensemble</span> <span class="kn">import</span> <span class="n">RandomForestClassifier</span>
@@ -1806,7 +1806,7 @@ Name: RESOURCE, dtype: int64</pre>
 </div>
 <div class="output_wrapper">
 <div class="output">
-<div class="output_area"><div class="prompt output_prompt">Out[14]:</div>
+<div class="output_area"><div class="prompt output_prompt"></div>
 <div class="output_text output_subarea output_execute_result">
 <pre>RandomForestClassifier(bootstrap=True, class_weight=None, criterion='gini',
             max_depth=None, max_features='auto', max_leaf_nodes=None,
@@ -1822,7 +1822,7 @@ Name: RESOURCE, dtype: int64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In [116]:</div>
+<div class="prompt input_prompt"></div>
 <div class="inner_cell">
 <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">feature_importances</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">clf_rf</span><span class="o">.</span><span class="n">feature_importances_</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">),</span> 
@@ -1838,7 +1838,7 @@ Name: RESOURCE, dtype: int64</pre>
 </div>
 <div class="output_wrapper">
 <div class="output">
-<div class="output_area"><div class="prompt output_prompt">Out[116]:</div>
+<div class="output_area"><div class="prompt output_prompt"></div>
 <div class="output_html rendered_html output_subarea output_execute_result">
 <div>
 <style>
@@ -1892,7 +1892,7 @@ Name: RESOURCE, dtype: int64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In [119]:</div>
+<div class="prompt input_prompt"></div>
 <div class="inner_cell">
 <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="kn">import</span> <span class="nn">seaborn</span> <span class="kn">as</span> <span class="nn">sns</span>
@@ -1907,7 +1907,7 @@ Name: RESOURCE, dtype: int64</pre>
 </div>
 <div class="output_wrapper">
 <div class="output">
-<div class="output_area"><div class="prompt output_prompt">Out[119]:</div>
+<div class="output_area"><div class="prompt output_prompt"></div>
 <div class="output_text output_subarea output_execute_result">
 <pre>[Text(0,0,u'RESOURCE'),
  Text(0,0,u'MGR_ID'),
@@ -1925,7 +1925,7 @@ Name: RESOURCE, dtype: int64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In [120]:</div>
+<div class="prompt input_prompt"></div>
 <div class="inner_cell">
 <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
@@ -2182,7 +2182,7 @@ WQuAWejWBvzghJW1ANgH4Qz4gVWpADQnwhkAAMMw5gwAgGEIZwAADEM4AwBgGMIZAADDEM4AABjm
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>The results are somewhat expected. The resource field has the most information, followed by manager id and department.</p>
+<p>As we can see, the resource field has the most information, followed by manager id and department fields.</p>
 </div>
 </div>
 </div>
@@ -2191,7 +2191,7 @@ WQuAWejWBvzghJW1ANgH4Qz4gVWpADQnwhkAAMMw5gwAgGEIZwAADEM4AwBgGMIZAADDEM4AABjm
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Training-Models-and-Cross-Validation">Training Models and Cross Validation<a class="anchor-link" href="#Training-Models-and-Cross-Validation">¶</a></h2>
+<h2 id="Training-Models-and-Cross-Validation">Training Models and Cross-Validation<a class="anchor-link" href="#Training-Models-and-Cross-Validation">¶</a></h2>
 </div>
 </div>
 </div>
@@ -2200,14 +2200,14 @@ WQuAWejWBvzghJW1ANgH4Qz4gVWpADQnwhkAAMMw5gwAgGEIZwAADEM4AwBgGMIZAADDEM4AABjm
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>In the next step, we train several classifiers on the data and measure their performance using cross validation. The goal here is to get an idea about the type of performance we can get with different classifiers. So, we will use default classifier parameters and leave performance tuning for layer.</p>
-<p>But before we can train classifiers, we need to do some preparation. Firstly, as we observed before the data is categorical. A standard practice when dealing with categorical data is <a href="http://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.OneHotEncoder.html">One Hot Encoding</a>:</p>
+<p>In the next step, we train several classifiers on the data and measure their performance using cross-validation. The goal here is to get an idea about the type of performance we can get with different classifiers. So, we will use default classifier parameters and leave performance tuning for later.</p>
+<p>But before we can train classifiers, we need to do some preparation on the data. Firstly, as we observed before the data is categorical. A standard practice when dealing with categorical data is <a href="http://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.OneHotEncoder.html">One Hot Encoding</a>:</p>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In [15]:</div>
+<div class="prompt input_prompt"></div>
 <div class="inner_cell">
 <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.preprocessing</span> <span class="kn">import</span> <span class="n">OneHotEncoder</span>
@@ -2243,7 +2243,7 @@ WQuAWejWBvzghJW1ANgH4Qz4gVWpADQnwhkAAMMw5gwAgGEIZwAADEM4AwBgGMIZAADDEM4AABjm
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In [24]:</div>
+<div class="prompt input_prompt"></div>
 <div class="inner_cell">
 <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn</span> <span class="kn">import</span> <span class="n">model_selection</span>
@@ -2263,13 +2263,13 @@ WQuAWejWBvzghJW1ANgH4Qz4gVWpADQnwhkAAMMw5gwAgGEIZwAADEM4AwBgGMIZAADDEM4AABjm
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Given these information, we can train different classifiers and evaluate their performance. Here, we choose learning curves as performance measure for the classifiers, since they provide more intuition about the model and data.</p>
+<p>Given these information, we can train different classifiers and evaluate their performance. Here, we choose learning curves as performance measure for the classifiers, since they provide more intuition about the model and data. sklearn provides great tools for obtaining the learning curves:</p>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In [52]:</div>
+<div class="prompt input_prompt"></div>
 <div class="inner_cell">
 <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
@@ -2317,9 +2317,18 @@ WQuAWejWBvzghJW1ANgH4Qz4gVWpADQnwhkAAMMw5gwAgGEIZwAADEM4AwBgGMIZAADDEM4AABjm
 </div>
 </div>
 </div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>We now obtain the learning curves for a number of well-known classifiers, namely, Nearest Neighbors, Linear SVM, Decision Tree, Random Forest, Neural Net, AdaBoost, and Logistic Regression. Since learning curves calculations are computationally expensive, we use decomposition to reduce the data dimensionality and speed up the computation.</p>
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In [12]:</div>
+<div class="prompt input_prompt"></div>
 <div class="inner_cell">
 <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.svm</span> <span class="kn">import</span> <span class="n">SVC</span>
@@ -5810,14 +5819,14 @@ AAAAAElFTkSuQmCC
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>The experiment reveals that some estimators like SVM have poor performance for this data and should be avoided. Also, estimators like Random Forest and Decision Tree tend to overfit. We also learn that although Logistic Regression classifier does not have the best performance, it is the fastest among the seven classifiers we tried.</p>
-<p>We can also calculate the cross validation score for all these classifiers. This is computationally much less intensive than obtaining the learning curves, so we don't have to use decomposition to reduce the dimensionality.</p>
+<p>This experiment reveals that some estimators like SVM have poor performance for this data and should be avoided. Also, estimators like Random Forest and Decision Tree tend to heavily overfit. We also learn that although Logistic Regression classifier does not have the best performance, it is the fastest among the seven classifiers we tried.</p>
+<p>We can also calculate the cross-validation score for all these classifiers. This is computationally much less intensive than obtaining the learning curves, so we don't have to use decomposition to reduce the dimensionality.</p>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In [33]:</div>
+<div class="prompt input_prompt"></div>
 <div class="inner_cell">
 <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">scores</span> <span class="o">=</span> <span class="p">{}</span>
@@ -5832,7 +5841,7 @@ AAAAAElFTkSuQmCC
 </div>
 <div class="output_wrapper">
 <div class="output">
-<div class="output_area"><div class="prompt output_prompt">Out[33]:</div>
+<div class="output_area"><div class="prompt output_prompt"></div>
 <div class="output_text output_subarea output_execute_result">
 <pre>Logistic Regression    0.856455
 Neural Net             0.848133
@@ -5852,13 +5861,13 @@ dtype: float64</pre>
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>As we see, here we get different performance picture from the learning curves and Logistic Regression provides the best performance. Let's find out if we can improve the performance of Logistic Regression classifier by optimizing the regularization parameter:</p>
+<p>As we see, here we get a different performance picture from the learning curves and Logistic Regression provides the best performance. Let's find out if we can improve the performance of Logistic Regression classifier by optimizing the regularization parameter:</p>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In [35]:</div>
+<div class="prompt input_prompt"></div>
 <div class="inner_cell">
 <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">GridSearchCV</span>
@@ -5872,7 +5881,7 @@ dtype: float64</pre>
 </div>
 <div class="output_wrapper">
 <div class="output">
-<div class="output_area"><div class="prompt output_prompt">Out[35]:</div>
+<div class="output_area"><div class="prompt output_prompt"></div>
 <div class="output_text output_subarea output_execute_result">
 <pre>GridSearchCV(cv=None, error_score='raise',
        estimator=LogisticRegression(C=1.0, class_weight=None, dual=False, fit_intercept=True,
@@ -5891,7 +5900,7 @@ dtype: float64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In [36]:</div>
+<div class="prompt input_prompt"></div>
 <div class="inner_cell">
 <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">gs</span><span class="o">.</span><span class="n">best_params_</span>
@@ -5901,7 +5910,7 @@ dtype: float64</pre>
 </div>
 <div class="output_wrapper">
 <div class="output">
-<div class="output_area"><div class="prompt output_prompt">Out[36]:</div>
+<div class="output_area"><div class="prompt output_prompt"></div>
 <div class="output_text output_subarea output_execute_result">
 <pre>{'C': 2.1544346900318834}</pre>
 </div>
@@ -5911,7 +5920,7 @@ dtype: float64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In [37]:</div>
+<div class="prompt input_prompt"></div>
 <div class="inner_cell">
 <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">clf</span> <span class="o">=</span> <span class="n">gs</span><span class="o">.</span><span class="n">best_estimator_</span>
@@ -5923,7 +5932,7 @@ dtype: float64</pre>
 </div>
 <div class="output_wrapper">
 <div class="output">
-<div class="output_area"><div class="prompt output_prompt">Out[37]:</div>
+<div class="output_area"><div class="prompt output_prompt"></div>
 <div class="output_text output_subarea output_execute_result">
 <pre>0.8584785888043406</pre>
 </div>
@@ -5936,7 +5945,7 @@ dtype: float64</pre>
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>We get some marginal improvement over the previous result of 0.856455 which was obtained using $C = 1$.</p>
+<p>We get some marginal improvement over the previous result of 0.856455 which was obtained using $C = 1$. Next, we examine feature engineer to see if higher performance improvements are possible.</p>
 </div>
 </div>
 </div>
@@ -5954,14 +5963,14 @@ dtype: float64</pre>
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>So far we have used each input feature individually in isolation from other features. We use feature engineering to generate new features that encode relationship among different features. For example, a particular resource may appear frequently in combination with certain manager id's or role departments.</p>
-<p>To extract these types of relationships, we can generate new features that are a combination of all possible subsets of length k of the input features. This idea is similar in essence to generate polynomial features for numerical data. However, since here we are dealing with categorical data we need to generate feature combinations instead. The following code is a generator that produces all k-combinations of the input array s:</p>
+<p>So far we have used each input feature individually in isolation from other features. We can use feature engineering to generate new features that encode relationship among different features. For example, a particular resource may appear frequently in combination with certain manager id's or role departments.</p>
+<p>To extract these types of relationships, we can generate new features that are a combination of all possible subsets of length k of the input features. This idea is similar in essence to generating polynomial features for numerical data. However, since here we are dealing with categorical data, we have to generate feature combinations instead. The following code is a generator that produces all k-combinations of the input array s:</p>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In [19]:</div>
+<div class="prompt input_prompt"></div>
 <div class="inner_cell">
 <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="kn">from</span> <span class="nn">itertools</span> <span class="kn">import</span> <span class="n">chain</span>
@@ -5981,7 +5990,7 @@ dtype: float64</pre>
 </div>
 <div class="output_wrapper">
 <div class="output">
-<div class="output_area"><div class="prompt output_prompt">Out[19]:</div>
+<div class="output_area"><div class="prompt output_prompt"></div>
 <div class="output_text output_subarea output_execute_result">
 <pre>[[0, 1, 2],
  [0, 1, 3],
@@ -6009,7 +6018,7 @@ dtype: float64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In [18]:</div>
+<div class="prompt input_prompt"></div>
 <div class="inner_cell">
 <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
@@ -6048,13 +6057,13 @@ dtype: float64</pre>
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>It is much nicer to format our feature generator as a sklearn transformer. This way, we can use it in data pipelines should we need to. We call this transformer HighOrderFeatures since it produces higher order interaction of existing feature.</p>
+<p>It is much nicer to format our feature generator as a sklearn transformer. This way, we can use it in data pipelines should we need to. We call this transformer HighOrderFeatures since it produces high order interactions of the existing features.</p>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In [17]:</div>
+<div class="prompt input_prompt"></div>
 <div class="inner_cell">
 <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="kn">from</span> <span class="nn">scipy</span> <span class="kn">import</span> <span class="n">sparse</span>
@@ -6088,13 +6097,13 @@ dtype: float64</pre>
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>We instantiate a HighOrderFeature transformer with degree = 2 which means it generates features of order one (regular features) and order two (combinations of every two features). We then apply the transformer to train and test data:</p>
+<p>We instantiate a HighOrderFeature transformer with degree = 2 which means it generates features of order one (regular features) as well as order two (combinations of every two features). We then apply this transformer to train and test data:</p>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In [20]:</div>
+<div class="prompt input_prompt"></div>
 <div class="inner_cell">
 <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">hof</span> <span class="o">=</span> <span class="n">HighOrderFeatures</span><span class="p">(</span><span class="n">degree</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
@@ -6110,13 +6119,13 @@ dtype: float64</pre>
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Unfortunately, the One-Hot-Encoder provided by sklearn has problem with processing sparse matrices, which are produced by the feature generator. So we have to write our own!</p>
+<p>Unfortunately, the One-Hot-Encoder provided by sklearn has a problem with processing sparse matrices, which are produced by the feature generator. So we have to write our own!</p>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In [21]:</div>
+<div class="prompt input_prompt"></div>
 <div class="inner_cell">
 <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="kn">from</span> <span class="nn">scipy</span> <span class="kn">import</span> <span class="n">sparse</span>
@@ -6161,13 +6170,13 @@ dtype: float64</pre>
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>We then apply One-Hot-Encoding to high order features generated in the previous stop:</p>
+<p>We then apply One-Hot-Encoding to high order features generated in the previous step:</p>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In [22]:</div>
+<div class="prompt input_prompt"></div>
 <div class="inner_cell">
 <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="k">def</span> <span class="nf">one_hot_endcode</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">X_test</span><span class="p">):</span>
@@ -6190,13 +6199,13 @@ dtype: float64</pre>
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Finally, we are ready to train a model on our data. We use a LogisticRegression classifier similar to the previous section, to see if we have gained any performance improvement using high order features.</p>
+<p>Finally, we are ready to train a model on our data. We use a Logistic-Regression classifier similar to the previous section, to see if we have gained any performance improvement using high order features.</p>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In [25]:</div>
+<div class="prompt input_prompt"></div>
 <div class="inner_cell">
 <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.linear_model</span> <span class="kn">import</span> <span class="n">LogisticRegression</span>
@@ -6213,7 +6222,7 @@ dtype: float64</pre>
 </div>
 <div class="output_wrapper">
 <div class="output">
-<div class="output_area"><div class="prompt output_prompt">Out[25]:</div>
+<div class="output_area"><div class="prompt output_prompt"></div>
 <div class="output_text output_subarea output_execute_result">
 <pre>GridSearchCV(cv=None, error_score='raise',
        estimator=LogisticRegression(C=1.0, class_weight=None, dual=False, fit_intercept=True,
@@ -6232,7 +6241,7 @@ dtype: float64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In [26]:</div>
+<div class="prompt input_prompt"></div>
 <div class="inner_cell">
 <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">gs</span><span class="o">.</span><span class="n">best_params_</span>
@@ -6242,7 +6251,7 @@ dtype: float64</pre>
 </div>
 <div class="output_wrapper">
 <div class="output">
-<div class="output_area"><div class="prompt output_prompt">Out[26]:</div>
+<div class="output_area"><div class="prompt output_prompt"></div>
 <div class="output_text output_subarea output_execute_result">
 <pre>{'C': 0.2782559402207124}</pre>
 </div>
@@ -6252,7 +6261,7 @@ dtype: float64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In [27]:</div>
+<div class="prompt input_prompt"></div>
 <div class="inner_cell">
 <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">clf</span> <span class="o">=</span> <span class="n">gs</span><span class="o">.</span><span class="n">best_estimator_</span>
@@ -6263,7 +6272,7 @@ dtype: float64</pre>
 </div>
 <div class="output_wrapper">
 <div class="output">
-<div class="output_area"><div class="prompt output_prompt">Out[27]:</div>
+<div class="output_area"><div class="prompt output_prompt"></div>
 <div class="output_text output_subarea output_execute_result">
 <pre>0.8698137523547452</pre>
 </div>
@@ -6276,13 +6285,13 @@ dtype: float64</pre>
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>The cross-validation score has improved considerably from 0.8585 to 0.8698 which is considerable improvement. Next we create a submission file using the obtain classifier and submit it to <a href="https://www.kaggle.com/c/amazon-employee-access-challenge">Kaggle</a> for evaluation:</p>
+<p>The cross-validation score has improved from 0.8585 to 0.8698 which is a considerable improvement. Next, we create a submission file using the obtain classifier and submit it to <a href="https://www.kaggle.com/c/amazon-employee-access-challenge">Kaggle</a> for evaluation:</p>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In [30]:</div>
+<div class="prompt input_prompt"></div>
 <div class="inner_cell">
 <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="k">def</span> <span class="nf">make_submission_file</span><span class="p">(</span><span class="n">y_test_pred</span><span class="p">,</span> <span class="n">filename</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
@@ -6305,8 +6314,8 @@ dtype: float64</pre>
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>We receive scores of 0.89919 and 0.89322 on public and private leader-boards, respectively. Interestingly, the leader-board scores are higher than our own local cross-validation score which is encouraging.</p>
-<p>The private leader-board score is used to determine the winning solution. The winning solution in this competition has the score of <a href="https://www.kaggle.com/c/amazon-employee-access-challenge/leaderboard">0.92360</a>. Comparing our score to this score, our score is around 97% of the winning solution which is promising. Achieving the other 3% would require employing more complex models and more extensive hyper-parameter tuning. We present some ideas how to do this in the next section.</p>
+<p>We receive scores of 0.89919 and 0.89322 on public and private leaderboards, respectively. Interestingly, the leaderboard scores are higher than our own local cross-validation score which is encouraging.</p>
+<p>The private leaderboard score is used to determine the winning solution. The winning solution in this competition has the score of <a href="https://www.kaggle.com/c/amazon-employee-access-challenge/leaderboard">0.92360</a>. Comparing our score to this score, our score is around 97% of the winning solution which is promising. Achieving the other 3% would require employing more complex models and more extensive hyper-parameter tuning. We present some ideas how to do this in the next section.</p>
 </div>
 </div>
 </div>
@@ -6324,7 +6333,7 @@ dtype: float64</pre>
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>In this article, we considered the problem of predicting access requirements for new Amazon employees. We first performed an exploratory data analysis which helped us become more familiar with the data. We also learned that all data features are categorical, which motivated the use of one-hot-encoding later when building our model. We compared the performance of several classification algorithms. We then picked Logistic-Regression due to its good performance and simplicity. We then managed to achieve a great score using feature engineering together with cross-validation and hyper-parameter tunning.</p>
+<p>In this article, we considered the problem of predicting access requirements for new Amazon employees. We first performed an exploratory data analysis which helped us become more familiar with the data. We also learned that all data features are categorical, which motivated the use of one-hot-encoding later when building our model. We compared the performance of several classification algorithms. We then picked Logistic-Regression due to its good performance and simplicity. We managed to achieve a great score using feature engineering together with cross-validation and hyper-parameter tunning.</p>
 <p>To further improve our model, we can try other classification algorithms which showed promising results in our performance comparison. In particular, as a next step we can try Random Forest and AdaBoost classifiers which offer better performance at the expense of higher complexity.</p>
 </div>
 </div>
